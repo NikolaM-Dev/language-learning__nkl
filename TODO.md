@@ -1,5 +1,5 @@
 # 🗺️ ROADMAP
 
-- [X] Setup python environments
-- [ ] Format sentences
+- [x] Setup python environments
+- [x] Format sentences 
 - [ ] Generate TTS
