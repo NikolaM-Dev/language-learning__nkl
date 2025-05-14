@@ -2,5 +2,5 @@
 
 - [x] Setup python environments
 - [x] Format sentences 
-- [ ] Generate TTS
+- [x] Generate TTS
 - [x] Setup dependencies
