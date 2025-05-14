@@ -51,11 +51,21 @@ def format_tts_text(sentences: list[str]) -> str:
     return "".join(sentences)
 
 
+def save_exercise(filename: str, content: str) -> None:
+    exercise_path = f"{CONFIG["outputs_path"]}/{filename}"
+    with open(exercise_path, "w") as file:
+        file.write(str(content))
+
+
 def get_tts_text(filename: str) -> str:
     raw_sentences = get_raw_sentences(filename)
     formatted_sentences = get_formatted_sentences(raw_sentences)
 
-    return format_tts_text(formatted_sentences)
+    tts_text = format_tts_text(formatted_sentences)
+
+    save_exercise(filename, tts_text)
+
+    return tts_text
 
 
 async def amain() -> None:
@@ -65,8 +75,8 @@ async def amain() -> None:
     filename = filename_with_ext.split(".").pop(0)
     tts_text = get_tts_text(filename_with_ext)
 
-    communicate = edge_tts.Communicate(tts_text, CONFIG["tts_voice"])
-    await communicate.save(f"{CONFIG["outputs_path"]}/{filename}.mp3")
+    # communicate = edge_tts.Communicate(tts_text, CONFIG["tts_voice"])
+    # await communicate.save(f"{CONFIG["outputs_path"]}/{filename}.mp3")
 
 
 if __name__ == "__main__":
