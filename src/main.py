@@ -4,7 +4,7 @@ import asyncio
 import edge_tts
 
 
-CONFIG = {
+CONFIG: dict[str, str | tuple[str, str, str]] = {
     "language_islands_path": "src/language-islands",
     "outputs_path": "src/outputs",
     "puntuation_symbols": (".", "?", "!"),
@@ -20,7 +20,7 @@ def get_filename() -> str:
     return sys.argv[1]
 
 
-def get_raw_sentences(filename: str) -> str:
+def get_raw_sentences(filename: str) -> list[str]:
     with open(f"{CONFIG['language_islands_path']}/{filename}") as language_islands:
         return language_islands.read().split("\n")
 
@@ -37,7 +37,7 @@ def verify_sentence(sentence: str) -> str:
 
 
 def get_formatted_sentences(sentences: list[str]) -> list[str]:
-    formatted_sentences = []
+    formatted_sentences: list[str] = []
     for sentence in sentences:
         verified_sentence = verify_sentence(sentence) + "\n"
 
@@ -75,8 +75,8 @@ async def amain() -> None:
     filename = filename_with_ext.split(".").pop(0)
     tts_text = get_tts_text(filename_with_ext)
 
-    # communicate = edge_tts.Communicate(tts_text, CONFIG["tts_voice"])
-    # await communicate.save(f"{CONFIG["outputs_path"]}/{filename}.mp3")
+    communicate = edge_tts.Communicate(tts_text, str(CONFIG["tts_voice"]))
+    await communicate.save(f"{CONFIG["outputs_path"]}/{filename}.mp3")
 
 
 if __name__ == "__main__":
