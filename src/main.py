@@ -6,7 +6,7 @@ import edge_tts
 
 CONFIG: dict[str, str | tuple[str, str, str]] = {
     "language_islands_path": "src/language-islands",
-    "outputs_path": "src/outputs",
+    "outputs_path": "src/outputs/english",
     "puntuation_symbols": (".", "?", "!"),
     "tts_voice": "en-US-AndrewNeural",
 }
