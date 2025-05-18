@@ -22,7 +22,13 @@ def get_filename() -> str:
 
 def get_raw_sentences(filename: str) -> list[str]:
     with open(f"{CONFIG['language_islands_path']}/{filename}") as language_islands:
-        return language_islands.read().split("\n")
+        raw_sentences: list[str] = []
+        raw_sentences = language_islands.read().split("\n")
+        raw_sentences = list(
+            filter(lambda sentence: len(sentence.strip()) > 0, raw_sentences)
+        )
+
+        return raw_sentences
 
 
 def verify_sentence(sentence: str) -> str:
