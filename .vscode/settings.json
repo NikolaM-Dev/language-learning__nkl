@@ -1,3 +1,6 @@
 {
-  "window.zoomLevel": 1
+  "window.zoomLevel": 1,
+  "editor.quickSuggestions": {
+    "other": "off"
+  }
 }
