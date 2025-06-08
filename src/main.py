@@ -1,27 +1,20 @@
-import sys
 import asyncio
+import os
+import sys
 
 import edge_tts
 
 
-CONFIG: dict[str, str | tuple[str, str, str]] = {
-    "language_islands_path": "src/language-islands",
-    "outputs_path": "src/outputs/english",
-    "puntuation_symbols": (".", "?", "!"),
-    "tts_voice": "en-US-AndrewNeural",
-}
-
-
-def get_filename() -> str:
-    if len(sys.argv) != 2:
-        print(f"[ERROR]: Usage python {sys.argv[0]} <language-island-filename>")
+def get_args() -> tuple[str, str]:
+    if len(sys.argv) != 3:
+        print(f"[ERROR]: Usage python {sys.argv[0]} <language-island> <output-dir>")
         sys.exit(1)
 
-    return sys.argv[1]
+    return sys.argv[1], sys.argv[2]
 
 
 def get_raw_sentences(filename: str) -> list[str]:
-    with open(f"{CONFIG['language_islands_path']}/{filename}") as language_islands:
+    with open(filename) as language_islands:
         raw_sentences: list[str] = []
         raw_sentences = language_islands.read().split("\n")
         raw_sentences = list(
@@ -36,7 +29,7 @@ def verify_sentence(sentence: str) -> str:
 
     verified_sentence = sentence.strip()
 
-    if not verified_sentence.endswith(CONFIG["puntuation_symbols"]):
+    if not verified_sentence.endswith((".", "!", "?")):
         verified_sentence += "."
 
     return verified_sentence
@@ -57,19 +50,18 @@ def format_tts_text(sentences: list[str]) -> str:
     return "".join(sentences)
 
 
-def save_exercise(filename: str, content: str) -> None:
-    exercise_path = f"{CONFIG["outputs_path"]}/{filename}"
-    with open(exercise_path, "w") as file:
+def save_exercise(file_path: str, content: str) -> None:
+    with open(file_path, "w") as file:
         file.write(str(content))
 
 
-def get_tts_text(filename: str) -> str:
-    raw_sentences = get_raw_sentences(filename)
+def get_tts_text(language_island: str, filename: str, output_dir: str) -> str:
+    raw_sentences = get_raw_sentences(language_island)
     formatted_sentences = get_formatted_sentences(raw_sentences)
 
     tts_text = format_tts_text(formatted_sentences)
 
-    save_exercise(filename, tts_text)
+    save_exercise(f"{output_dir}/{filename}", tts_text)
 
     return tts_text
 
@@ -77,12 +69,14 @@ def get_tts_text(filename: str) -> str:
 async def amain() -> None:
     """Main function"""
 
-    filename_with_ext = get_filename()
-    filename = filename_with_ext.split(".").pop(0)
-    tts_text = get_tts_text(filename_with_ext)
+    language_island, output_dir = get_args()
+    filename = os.path.basename(language_island)
 
-    communicate = edge_tts.Communicate(tts_text, str(CONFIG["tts_voice"]))
-    await communicate.save(f"{CONFIG["outputs_path"]}/{filename}.mp3")
+    tts_text = get_tts_text(language_island, filename, output_dir)
+
+    communicate = edge_tts.Communicate(tts_text, "en-US-AndrewNeural")
+
+    await communicate.save(f"{output_dir}/{filename.replace(".md", "")}.mp3")
 
 
 if __name__ == "__main__":
