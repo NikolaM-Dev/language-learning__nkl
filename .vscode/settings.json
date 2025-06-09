@@ -1,5 +1,7 @@
 {
+  // See better when practice the Langauge Islands.
   "window.zoomLevel": 1,
+  // Don't autocomplete to use the memory to remember how to type the words.
   "editor.quickSuggestions": {
     "other": "off"
   }
