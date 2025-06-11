@@ -35,7 +35,7 @@ He adjusted the settings on the machine.
 They argued about politics.
 New problems often arise unexpectedly.
 Please confirm your reservation.
-My coach was always encouraging me to do my best. (Note
+My coach was always encouraging me to do my best.
 We will incorporate your feedback.
 Can you justify your actions?
 She organized the entire event.

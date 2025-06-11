@@ -183,11 +183,11 @@ Please confirm your reservation.
 Please confirm your reservation.
 Please confirm your reservation.
 Please confirm your reservation.
-My coach was always encouraging me to do my best. (Note.
-My coach was always encouraging me to do my best. (Note.
-My coach was always encouraging me to do my best. (Note.
-My coach was always encouraging me to do my best. (Note.
-My coach was always encouraging me to do my best. (Note.
+My coach was always encouraging me to do my best.
+My coach was always encouraging me to do my best.
+My coach was always encouraging me to do my best.
+My coach was always encouraging me to do my best.
+My coach was always encouraging me to do my best.
 We will incorporate your feedback.
 We will incorporate your feedback.
 We will incorporate your feedback.

@@ -35,7 +35,7 @@ Ajustó la configuración de la máquina.
 Discutieron sobre política.
 A menudo surgen nuevos problemas inesperadamente.
 Por favor confirme su reserva.
-Mi entrenador siempre me animaba a dar lo mejor de mí. (Nota
+Mi entrenador siempre me animaba a dar lo mejor de mí.
 Incorporaremos sus comentarios.
 ¿Puedes justificar tus acciones?
 Ella organizó todo el evento.
