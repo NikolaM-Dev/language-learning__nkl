@@ -33,14 +33,14 @@ Es fácil criticar a los demás.
 Te mereces un descanso después de todo ese duro trabajo.
 El incendio destruyó el antiguo edificio.
 No dudes en hacer preguntas.
-Los diagramas ilustran el proceso claramente.
+Los diagramas ilustraron el proceso claramente.
 Por favor, informeme de cualquier cambio.
 La fábrica está fabricando coches nuevos.
 ¿Puedes persuadirla para que venga?
 Ella vertió agua en el vaso.
 Propuso una nueva solución.
 Por favor recuérdame sobre la reunión.
-Superaremos este desafío. (Uso formal/antiguo)
+Superaremos este desafío.
 Debes enviar tu solicitud antes del viernes.
 Supongo que tienes razón.
 ¿Puedes traducir este documento al español?
