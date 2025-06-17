@@ -31,7 +31,7 @@ Empezó a tamborilear con los dedos impacientemente sobre la mesa.
 Esperamos ganar el campeonato este año.
 El perro salvaje comenzó a atacar al intruso.
 El sospechoso intentó afirmar que no estaba en el lugar de los hechos.
-Tuvimos que arrastrar los muebles pesados ​​por toda la habitación.
+Tuvimos que arrastrar los muebles pesados por toda la habitación.
 Debes beber mucha agua para mantenerte hidratado.
 ¿Puedes adivinar cuántos dulces hay en el frasco?
 Ella logró meter al perro reacio en la bañera.
