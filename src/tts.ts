@@ -1,10 +1,5 @@
 import { EdgeTTS } from '@andresaya/edge-tts';
-
-import {
-  parseArgs,
-  type ParseArgsConfig,
-  type ParseArgsOptionsConfig,
-} from 'util';
+import { parseArgs, type ParseArgsOptionsConfig } from 'util';
 
 interface IArgs {
   slug: string;
@@ -18,7 +13,6 @@ const config = {
 
 function getArgs(): IArgs {
   const options: ParseArgsOptionsConfig = {
-    slug: { short: 's', type: 'string' },
     text: { short: 't', type: 'string' },
   };
 
@@ -36,6 +30,10 @@ function getArgs(): IArgs {
   return values as unknown as IArgs;
 }
 
+function getSlug(index: number): string {
+  return `${index}--${new Date().getTime()}`;
+}
+
 async function generateAudio(payload: string, slug: string): Promise<void> {
   const tts = new EdgeTTS();
 
@@ -45,10 +43,69 @@ async function generateAudio(payload: string, slug: string): Promise<void> {
   console.log(` [INFO] Audio successfully saved on ${filePath}`);
 }
 
-async function main() {
-  const { slug, text } = getArgs();
+async function parseText(payload: string): Promise<string> {
+  if (!payload.includes('.txt')) return payload;
 
-  await generateAudio(text, slug);
+  const file = Bun.file(payload);
+  return await file.text();
+}
+
+function getSentences(payload: string, factor = 5): string[] {
+  let sentences: string[] = [];
+  const cleanedSentences = payload
+    .split('\n')
+    .filter((sentence) => sentence.trim().length > 0)
+    .filter((sentence) => {
+      const sentenceCopy = sentence;
+      const lastChar = [...sentenceCopy].pop()!;
+
+      return ['.', '?', '!'].includes(lastChar);
+    });
+
+  cleanedSentences.forEach((sentence) => {
+    for (let i = 0; i < factor; i++) {
+      sentences.push(sentence);
+    }
+  });
+
+  return sentences;
+}
+
+function getGroupSentences(sentences: string[], factor = 20): string[][] {
+  let groupedSentences: string[][] = [];
+  let currentIndex = 0;
+  sentences.forEach((sentence, i) => {
+    if ((i + 1) % factor === 0) {
+      currentIndex++;
+    }
+
+    groupedSentences[currentIndex] ??= [];
+    // @ts-ignore, This is validated using the Nullish coalescing assignment
+    groupedSentences[currentIndex].push(sentence);
+  });
+
+  return groupedSentences;
+}
+
+async function generateAudios(groupedSentences: string[][]): Promise<void> {
+  const promises = groupedSentences.map((sentencesList, i) => {
+    const text = sentencesList.join('\n');
+    const slug = getSlug(i);
+
+    return generateAudio(text, slug);
+  });
+
+  await Promise.all(promises);
+}
+
+async function main() {
+  const { text } = getArgs();
+
+  const parsedText = await parseText(text);
+  const sentences = getSentences(parsedText);
+  const groupedSentences = getGroupSentences(sentences);
+
+  await generateAudios(groupedSentences);
 }
 
 main();
