@@ -355,3 +355,6 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# MP3
+*.mp3
