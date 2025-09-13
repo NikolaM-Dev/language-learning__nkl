@@ -105,6 +105,7 @@ async function main() {
   const sentences = getSentences(parsedText);
   const groupedSentences = getGroupSentences(sentences);
 
+  await Bun.write(text, sentences.join('\n'));
   await generateAudios(groupedSentences);
 }
 
