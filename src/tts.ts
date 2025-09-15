@@ -53,6 +53,10 @@ async function parseText(payload: string): Promise<string> {
 function getSentences(payload: string, factor = 5): string[] {
   let sentences: string[] = [];
   const cleanedSentences = payload
+    .replaceAll('‘', "'")
+    .replaceAll('’', "'")
+    .replaceAll('“', '"')
+    .replaceAll('”', '"')
     .split('\n')
     .filter((sentence) => sentence.trim().length > 0)
     .filter((sentence) => {
