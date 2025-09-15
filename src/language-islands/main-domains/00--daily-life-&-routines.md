@@ -130,6 +130,23 @@ standing up to make sure I alternate between sitting and standing.
 
 ## Question
 
+How often do you change your daily routine?
+
+## Answer
+
+I don’t change my daily routine very much. I already have a good setup, and I
+only modify the order of tasks sometimes to increase efficiency. Most of the
+time, my routine stays the same because it works for me and I don’t have any
+problems with it. For that reason, I’m not going to change my routine
+drastically. I just adapt it depending on the situation. If something unexpected
+comes up, I set new priorities. If the new priority is more important than
+what’s on my current agenda, I focus on that first. Afterward, I try to return
+to my normal routine, but I’ll drop the lower-priority tasks to keep my rhythm
+and avoid burnout. Sometimes, instead of dropping tasks, I just spread them out
+over the rest of the week.
+
+## Question
+
 How do you usually spend the first hour after waking up?
 
 ## Answer
@@ -161,7 +178,6 @@ How do you usually organize your day?
 - How do you usually handle chores at home?
 - What is your favorite part of the afternoon?
 - How do you usually spend your commute time?
-- How often do you change your daily routine?
 - What's something you would like to add to your routine but haven't yet?
 - How do you usually manage your meals during a busy day?
 - What's one thing you never skip in your daily routine?
