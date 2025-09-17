@@ -147,28 +147,47 @@ over the rest of the week.
 
 ## Question
 
-How do you usually spend the first hour after waking up?
+How do you usually deal with distractions?
 
 ## Answer
+
+When it comes to distractions, the way I usually deal with them is by using a
+custom version of the Eisenhower Matrix. I use it to stay focused on my defined
+goals. My top priority is my health, and next is my career. I know myself, I
+want to learn almost everything, but I also know that’s not realistic. So, when
+distractions come up, here’s what I do: whenever I get a new idea or notice a
+“shiny object” I’d like to chase, I write it down in my Eisenhower Matrix. Once
+I’ve finished my most important tasks, I assign a priority to that new idea.
+This way, I only pay attention to distractions at the right time. Some
+distractions can be inspiring, but most of them are just shiny objects that try
+to pull my focus away.
 
 ## Question
 
-What role does coffee or tea play in your mornings?
+How do you usually prepare for the next day?
 
 ## Answer
 
-## Question
+I actually have a task in my agenda to prepare for the next day. In my agenda
+app, called TicTic, there’s an option to see the tasks I need to tackle
+tomorrow. So I check that list to get an overview of what’s coming up and how I
+can prepare.
 
-How do you usually organize your day?
+I usually focus on my morning routine because the things I need to prepare are
+more likely to come up at that time, since my days are pretty consistent. If I
+know I need to do something tomorrow, I set up my environment to make it easier.
 
-## Answer
+For example, if I need to clean my bedroom, I place the broom and dustpan near
+my desk. If I need to change my towel, I put a fresh one next to the dresser I
+usually see in the morning. That’s how I normally prepare for the next day.
 
+# Questions
+
+- What role does coffee or tea play in your mornings?
+- How do you usually organize your day?
 - What do you usually do for lunch, and where do you prefer to have it?
 - How do you manage your energy throughout the day?
 - What's the most challenging part of your daily routine?
-
-## Question
-
 - What role does exercise play in your routine?
 - How do you balance work or study with personal time?
 - How do you usually plan your tasks for the day?
@@ -177,11 +196,9 @@ How do you usually organize your day?
 - What time of the day do you feel most productive?
 - How do you usually handle chores at home?
 - What is your favorite part of the afternoon?
-- How do you usually spend your commute time?
 - What's something you would like to add to your routine but haven't yet?
 - How do you usually manage your meals during a busy day?
 - What's one thing you never skip in your daily routine?
-- How do you usually prepare for the next day?
 - What role does technology play in your everyday life?
 - How do you usually relax after a long day?
 - What's your typical evening routine like?
@@ -196,7 +213,6 @@ How do you usually organize your day?
 - How do you usually track your responsibilities?
 - How do you incorporate learning into your daily routine?
 - What's something small that makes your daily life better?
-- How do you usually deal with distractions?
 - What's the most enjoyable part of your routine?
 - How do you usually celebrate finishing your daily tasks?
 - How do you usually adapt your routine when traveling?
