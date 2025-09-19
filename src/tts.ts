@@ -24,7 +24,7 @@ function getArgs(): IArgs {
   });
 
   if (Object.keys(values).length !== Object.keys(options).length) {
-    throw new Error(` [ERROR] Usage: ${positionals[1]} [text] [slug]`);
+    throw new Error(` [ERROR] Usage: ${positionals[1]} [text]`);
   }
 
   return values as unknown as IArgs;
