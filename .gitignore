@@ -356,5 +356,9 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
 
-# MP3
+# Audio
 *.mp3
+*.wav
+
+# Temporal
+scriptium*.txt
