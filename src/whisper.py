@@ -42,13 +42,21 @@ def main():
     """
 
     audio = get_args()
+    transcription_filename = audio.replace("wav", "txt").replace("mp3", "txt")
     model = get_model()
 
     segments, _ = model.transcribe(audio, beam_size=5)
+    transcription = ""
 
     # Stream transcrption
     for segment in segments:
         print(segment.text)
+        transcription += segment.text + "\n"
+
+    file = open(transcription_filename, "w")  # open in write mode 'w'
+    file.write(transcription)
+    file.close()
+    print(f"Transcription is also save into {transcription_filename}")
 
 
 # end def
