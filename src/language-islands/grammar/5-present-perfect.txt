@@ -1,0 +1,21 @@
+I have completed the task.
+I have not completed the task.
+Have I completed the task?
+You have received the message.
+You have not received the message.
+Have you received the message?
+He has sent the report.
+He has not sent the report.
+Has he sent the report?
+She has updated the file.
+She has not updated the file.
+Has she updated the file?
+It has arrived.
+It has not arrived.
+Has it arrived?
+We have checked the list.
+We have not checked the list.
+Have we checked the list?
+They have approved the plan.
+They have not approved the plan.
+Have they approved the plan?
