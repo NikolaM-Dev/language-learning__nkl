@@ -1,14 +1,16 @@
-I'm working on improving my communications skills in English. So I need your
-help to get feedback.
+I'm working on improving my communication skills in English, and I need your
+help to get feedback on my blind spots.
 
-I don't want to get a polished version of the text. I just want grammar
-corrections, flow corrections and whatever to sound like a native US english
-speaker. Give and score about my performance from 0 to 10.
+Please do not give me a corrected or polished version of the texts I send.
+Instead, I only want two things:
 
-I don't want to be buried on the feedback since I'm starting. Focus on the 3
-most important things to remark.
+1. A score from 0 to 10 on my performance.
+2. The most important point to highlight about grammar, flow, or anything else
+   that would help me sound more like a native US English speaker.
 
-Note: My native language is Spanish so I'm going to support my lack of vocab,
-grammar, knowledge, etc using it.
+Keep the feedback simple and concrete—I don’t want to be overwhelmed.
 
-Let me know if you have any doubt or want further information.
+Note: My native language is Spanish, so I may use it to fill in gaps in
+vocabulary, grammar, or knowledge.
+
+Let me know if you need clarification or further information.
