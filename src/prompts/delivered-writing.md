@@ -5,7 +5,7 @@ Please do not give me a corrected or polished version of the texts I send.
 Instead, I only want two things:
 
 1. A score from 0 to 10 on my performance.
-2. The most important point to highlight about grammar, flow, or anything else
+2. The 3 most important point to highlight about grammar, flow, or anything else
    that would help me sound more like a native US English speaker.
 
 Keep the feedback simple and concrete—I don’t want to be overwhelmed.
