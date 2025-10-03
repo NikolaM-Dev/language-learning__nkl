@@ -84,3 +84,36 @@ improved version. You just need to follow the next steps:
 Visualizing works because you are unlocking all your potential and how Napoleon
 Hill once said, "Whatever the mind can conceive and believe, the mind can
 achieve"
+
+## Attempt 3
+
+**Score:** 6
+
+This post is about visualizing. Visualizing is a technique in which you imagine
+whatever you want. The concept it's simple but powerful. For example, basketball
+players use it to imagine themselves shooting better and then they do better in
+real life. Also, you can use it to improve your fluency by imagining yourself in
+many different situations. Your goal is to start or continue a conversation
+using them.
+
+Visualizing is a technique that you could use for whatever and whenever, meaning
+you are in a safety spot with unlimited resources to practice.
+
+This post focuses on improving your future self, hopefully a better one.
+Anyways, these are the steps:
+
+1. Imagine your best version and don't forget anything. That is the foundation
+   to put these ideas in your mind to increase the speed and likelihood of
+   transform them into reality.
+2. Now, you are going to take the decision of what is the most important thing
+   to achieve that version. Once you had decided, you will go all in on that.
+3. At this point, things such as distractions, excuses, and doubts will start
+   popping into your head. This is okay, everyone experience the something like
+   that. Your task is reframe those negative thoughts as hidden opportunities.
+4. Finally, you are going to make a deep introspection about "why" this is
+   worth. Every time you have negative thoughts, you will use your answer to
+   support the last point.
+
+Again, visualizing is simple and powerful. It works because you are unlocking
+your potential. Even thought it isn't easy, it's possible. So, as Napoleon Hill
+once said, "Whatever the mind can conceive and believe, the mind can achieve"
